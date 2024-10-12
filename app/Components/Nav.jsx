@@ -8,13 +8,17 @@ const Nav = () => {
     const pathname  = usePathname()
     return (
         <div className='bg-base-200'>
-            <ul className='flex text-2xl  justify-center items-center gap-5 p-2'>
+            <ul className='flex text-lg md:text-xl 2xl:text-2xl  justify-center items-center gap-5 p-5'>
             <li>
-                    <Link href="/" className={` ${pathname == "/" ? "text-red-500" : ""} `}> Announcement
+                    <Link href="/" className={` ${pathname == "/" ? "text-primary" : ""} `}> Announcement
                     </Link>
                 </li> 
                 <li>
-                    <Link href="/discussions" className={` ${pathname == "/discussions" ? "text-red-500" : ""} `}> Discussion
+                    <Link href="/discussions" className={` ${pathname == "/discussions" ? "text-primary" : ""} `}> Discussion
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/PublishTicket" className={` ${pathname == "/PublishTicket" ? "text-primary" : ""} `}> Publish Ticket
                     </Link>
                 </li>
                
